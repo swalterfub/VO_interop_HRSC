@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+      body { font-family: 'Roboto'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .footnote {
+        position: absolute;
+	left: 0;
+	right: 0;
+        bottom: 2em;
+        font-size: medium;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      a:visited {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Virtual Observatory (VO) interoperability with HRSC Services
+
+Sebastian Walter
+
+Freie Universität Berlin
+
+## VESPA/PLANMAP Meeting
+
+30 June 2019
+
+
+---
+
+#General System Design
+
+.center[![:scale 80%](2018je005588-imars-f01.png)]
+
+---
+
+# Image Distribution - Ls
+
+.pull-left[
+##.center[North pole]
+.center[![:scale 120%](hrsc3nd2nps_date-ls.png)]
+]
+.pull-right[
+##.center[South pole]
+.center[![:scale 120%](hrsc3nd2sps_date-ls.png)]
+]
+
+???
+
+Interannual variablity vs. seasonal variability
+
+summer solstice
+
+---
+
+# Image Distribution - LTST
+
+.pull-left[
+##.center[North pole]
+.center[![:scale 120%](hrsc3nd2nps_date-localtime.png)]
+]
+.pull-right[
+##.center[South pole]
+.center[![:scale 120%](hrsc3nd2sps_date-localtime.png)]
+]
+
+???
+
+Interannual variablity vs. seasonal variability
+
+---
+
+#Seasonal Variability
+
+.center[![:scale 80%](2018je005588-imars-f11.png)]
+
+.right[Walter et al., 2018]
+
+???
+
+Seasonal growth , by condensation, and retreat (by sublimation)
+removal of CO2 ice is not complete until Ls 320°–330°
+
+---
+
+#Interannual Variability
+
+.center[![:scale 80%](2018je005588-imars-f12.png)]
+
+.right[MYs 27, 29, 32 at Ls 303-304° - Walter et al., 2018]
+
+.center[![:scale 100%](1-s2.0-S0019103516304109-gr7_lrg.jpg)]
+
+.right[MYs 28, 29, 30, 31 at Ls 299.3° - Calvin et al., 2017]
+
+???
+
+the “anti-cryptic” hemisphere noted by “late seasonal retreat”
+
+MY 28 (2007), MY 29 (2009), MY 30 (2011), MY 31 (2013)
+
+Retreat is the most advanced in MY 28, following a global dust storm that began near Ls 265° in that year. 
+
+According to Calvin et al. (2017), the extent of seasonal frost was
+largest at MY 29 at this spot (cf. Figure 7 of Calvin et al., 2017), but the authors had no Mars Color Imager data
+available for MY 27. This observation leads to the conclusion that both MY 27 and 29 had slower ice retreat
+rates than usual. In MY 32, the retreat of the seasonal ice/frost deposits at Ls 298 ∘ was comparable to that of
+Ls 304 ∘ from the other years (cf. Figure 11d).
+
+https://www.sciencedirect.com/science/article/pii/S0019103516304109?via%3Dihub
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      remark.macros.scale = function (percentage) {
+	  var url = this;
+	  return '<img src="' + url + '" style="width: ' + percentage + '" />';
+	};
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
