@@ -40,26 +40,33 @@
 
 class: center, middle
 
-# Virtual Observatory (VO) interoperability with HRSC Services
+# Interoperability between the HRSC Web Services and the VO infrastructure
 
-Sebastian Walter
+Sebastian Walter, Stéphane Erard, Mikhail Minin
 
-Freie Universität Berlin
+Freie Universität Berlin, Observatoire de Paris, Jacobs Universität Bremen
 
 ## VESPA/PLANMAP Meeting
 
-30 June 2019
+2 July 2019
 
+---
+
+#The HRSC Web Services
+
+- Backend part of the HRSC Mapserver
+
+- http://maps.planet.fu-berlin.de
 
 ---
 
 #General System Design
 
-.center[![:scale 80%](2018je005588-imars-f01.png)]
+.center[![:scale 80%](system-design.png)]
 
 ---
 
-# Image Distribution - Ls
+# Data Access
 
 .pull-left[
 ##.center[North pole]
@@ -72,11 +79,23 @@ Freie Universität Berlin
 
 ???
 
-Interannual variablity vs. seasonal variability
-
-summer solstice
-
 ---
+
+#Outsdanding Issues
+
+- Offsets for high resolution data due to
+
+-- Lack of pointing precision
+--- co-registration to common base dataset
+-- different reference systems used (radii, spherical vs. elliptical)
+-- unprecise description of reference systems (o'centric, o'graphic)
+
+
+
+
+
+
+-- 
 
 # Image Distribution - LTST
 
