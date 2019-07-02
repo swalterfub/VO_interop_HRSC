@@ -3,6 +3,10 @@
   <head>
     <title>Interoperability of HRSC and VO</title>
     <meta charset="utf-8">
+    <style>
+       .column:first-of-type {float:left}
+       .column:last-of-type {float:right}
+    </style>
   </head>
   <body>
     <textarea id="source">
@@ -42,16 +46,24 @@ Freie Universität Berlin, Observatoire de Paris, Jacobs Universität Bremen
 ---
 ### Load HRSC DTMs in QGIS
     http://maps.planet.fu-berlin.de/eqc-bin/hrscdyn
-.right[![](qr-qgis.png)]
-.left[![:scale 50%](qgis.png)]
+.column[
+.center[![:scale 70%](qgis.png)]
+]
 
 ---
-#Outstanding Issues
-- Offsets for high resolution data due to
--- Lack of pointing precision
---- co-registration to common base dataset
--- different reference systems used (radii, spherical vs. elliptical)
--- unprecise description of reference systems (o'centric, o'graphic)
+# Unresolved issues
+
+- different reference systems used (radii, spherical vs. elliptical)
+
+  -> documentation
+
+- unprecise description of reference systems (e.g., planetocentric, planetographic)
+
+- offsets for high resolution data due to
+
+  - lack of pointing precision
+
+    -> co-registration to common base dataset
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
