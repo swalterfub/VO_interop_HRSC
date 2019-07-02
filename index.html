@@ -13,13 +13,13 @@
 
 class: center, middle
 
-# Interoperability between the HRSC Web Services and the VO infrastructure
+## Interoperability between the HRSC Web Services and the VO infrastructure
 
 Sebastian Walter, Stéphane Erard, Mikhail Minin
 
 Freie Universität Berlin, Observatoire de Paris, Jacobs Universität Bremen
 
-## VESPA/PLANMAP Meeting
+### VESPA/PLANMAP Meeting
 
 2 July 2019
 
@@ -51,19 +51,26 @@ Freie Universität Berlin, Observatoire de Paris, Jacobs Universität Bremen
 ]
 
 ---
-### Unresolved issues
-
-- different reference systems used (radii, spherical vs. elliptical)
-
-  -> documentation
-
-- unprecise description of reference systems (e.g., planetocentric, planetographic)
+### Unresolved issues in VESPA
 
 - offsets for high resolution data due to
 
-  - lack of pointing precision
+  - different reference systems used (radii, spherical vs. elliptical)
 
-    -> co-registration to common base dataset
+     - documentation in epn_tap fields:
+
+              `spatial_coordinate_description`
+
+	      `map_projection` 
+
+     - standardise
+
+  - unprecise description of reference systems (e.g., planetocentric, planetographic)
+     - document/standardise
+
+  - lack of pointing precision
+     - block adjustments
+     - co-registration to common base dataset
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
